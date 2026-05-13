@@ -18,6 +18,7 @@
 #include "qosa_def.h"
 #include "qosa_log.h"
 #include "qurl.h"
+#include "unirtos_app_init_registry.h"
 #include "qosa_virtual_file.h"
 
 #define QOS_LOG_TAG                    LOG_TAG
@@ -222,3 +223,5 @@ void unir_qurl_http_post_demo_init(void)
         return;
     }
 }
+
+UNIRTOS_APP_EXPORT(364, "qurl_http_post_demo", unir_qurl_http_post_demo_init);
