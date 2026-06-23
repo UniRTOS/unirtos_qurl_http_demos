@@ -26,7 +26,7 @@
 python --version # Python3
 git --version
 unirtos --version # 1.0.5 及以上版本
-unirtos-cli version # 1.0.8 及以上版本
+unirtos-cli version # 1.0.9 及以上版本
 ```
 
 ### 2. 使用 unirtos-cli 拉取 demo

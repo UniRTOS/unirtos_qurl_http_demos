@@ -3,14 +3,13 @@ message(STATUS "cmake config ${CMAKE_CURRENT_SOURCE_DIR}")
 # This CMakeLists is designed to be imported by SDK root CMake via add_subdirectory.
 # It follows the UniRTOS external app contract (same pattern as unirtos project create).
 
-# Application target name: from environment variable or default to 'application'
+# Application target name: from environment variable or fallback to app root folder name.
 if(DEFINED ENV{UNIRTOS_APP_TARGET_NAME})
     set(target $ENV{UNIRTOS_APP_TARGET_NAME})
 else()
-    set(target application)
+    get_filename_component(target ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 endif()
 message(STATUS "UniRTOS app target name: ${target}")
-
 add_apps_libraries($<TARGET_FILE:${target}>)
 add_library(${target} STATIC)
 set_target_properties(${target} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${out_unir_lib_dir})
