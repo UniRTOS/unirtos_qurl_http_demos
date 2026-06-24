@@ -52,4 +52,5 @@ if(_app_external_library_targets)
 	target_link_libraries(${target} PUBLIC ${_app_external_library_targets})
 endif()
 
-target_link_libraries_if(CONFIG_QOSA_LINK_SYSTEM_LIBRARIES_FUNC THEN ${target} system_os)
+# UNcomment to add the libraries you need here.
+# target_link_libraries(${target} libxxx)
