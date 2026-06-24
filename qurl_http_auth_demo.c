@@ -114,4 +114,4 @@ void unir_qurl_http_auth_demo_init(void)
     }
 }
 
-UNIRTOS_APP_EXPORT(361, "qurl_http_auth_demo", unir_qurl_http_auth_demo_init);
+// UNIRTOS_APP_EXPORT(361, "qurl_http_auth_demo", unir_qurl_http_auth_demo_init);
