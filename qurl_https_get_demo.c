@@ -370,4 +370,4 @@ void unir_qurl_https_demo_init(void)
     }
 }
 
-UNIRTOS_APP_EXPORT(363, "qurl_https_demo", unir_qurl_https_demo_init);
+// UNIRTOS_APP_EXPORT(363, "qurl_https_demo", unir_qurl_https_demo_init);

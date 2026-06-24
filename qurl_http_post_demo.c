@@ -224,4 +224,4 @@ void unir_qurl_http_post_demo_init(void)
     }
 }
 
-UNIRTOS_APP_EXPORT(364, "qurl_http_post_demo", unir_qurl_http_post_demo_init);
+// UNIRTOS_APP_EXPORT(364, "qurl_http_post_demo", unir_qurl_http_post_demo_init);
