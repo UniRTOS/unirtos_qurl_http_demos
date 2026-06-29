@@ -1,1 +1,3 @@
 qos_build/
+*.code-workspace
+.DS_Store
